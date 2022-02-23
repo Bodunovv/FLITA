@@ -2,26 +2,27 @@
 #include <math.h>
 
 int BinatiToDecimal(int);
+
 int main()
 {
-   printf(" Enter a binary number ");
-    int binaryNum;
-      scanf("%d", &binaryNum);
-    int decimalNum = BinatiToDecimal(binaryNum); //Функция перевода из 2СС в 10СС
-      printf(" \n%d 2 = %d 10\n", binaryNum, decimalNum);
-      return 0;
-  }
+printf("Введите дв. число: ");
+int biNum;
+scanf("%d", &biNum);
+int decimalNum = BinatiToDecimal(biNum);
+printf("дв. де.");
+printf("\n%d = %d\n", biNum, decimalNum);
+return 0;
+}
 
-  int BinatiToDecimal(int x)
-  {
-  int res = 0, help = 0;
-    while(x){
-  int help2 = x % 10;
-    if(help2 == 1)
-    res += pow(2, help);
-    help++;
-    x /= 10;
-  }
+int BinatiToDecimal(int x){
+int res = 0, help = 0;
+while(x){
+int help2 = x % 10;
+if(help2 == 1)
+res += pow(2, help);
+help++;
+x /= 10;
+}
 
-   return res;
+return res;
 }
