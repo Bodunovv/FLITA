@@ -27,7 +27,6 @@ int main() {
     return flag;
   } else {
     return main;
-  }
   int mass_bin[j];
 
   for (i = 0; i < j; i++) {
@@ -43,5 +42,6 @@ int main() {
     printf("\n%d = %d\n", biNum, decNum);
   }
   return 0;
+    }
 }
   }
