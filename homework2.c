@@ -23,7 +23,7 @@ int main()
   for(int q = 0; q<5; q++){
       for(int z =0; z<5; z++){
         if(arr[q][z]!='0'){
-          printf("%d - %d\n", z+1, z+1);
+          printf("%d - %d\n", z+1, arr[q][z]);
           fprintf(B, "  %d -- %d\n", q+1, z+1);
         }
       }
