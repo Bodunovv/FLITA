@@ -31,4 +31,6 @@ int main()
   }
   fprintf(B, "}");
   fclose(B);
-} 
+  system("dot res.gv -Tpng -o g.png");
+  system("g.png");
+}
