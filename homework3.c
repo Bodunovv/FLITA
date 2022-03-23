@@ -63,6 +63,8 @@ Vis[v] = 1;
 for (int i = 0; i < N; i++)
 if (Graf[v][i])
 SvyzGraf(N, Graf, Vis, i);
+ system("dot res.gv -Tpng -o g.png");
+  system("g.png");
 }
 
 
